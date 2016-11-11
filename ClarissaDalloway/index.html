@@ -1,6 +1,21 @@
 <html>
 <head>
   <title>ClarissaDalloway</title>
+  <script type="text/javascript">
+var textarray = [
+ "hi",
+ "hello",
+ "how r u",
+ "where r u"    // No comma after last entry
+];
+
+function RndText() {
+  var rannum= Math.floor(Math.random()*textarray.length);
+  document.getElementById('ShowText').innerHTML=textarray[rannum];
+}
+onload = function() { RndText(); }
+
+</script>
 </head>
   
   <style>  
@@ -25,6 +40,7 @@
   </style>
 
 <body background = "/L235F16/ClarissaDalloway/images/rose.jpg">
+  <div id="ShowText"></div>
  <br> 
 <center><font size = "60" color = "#99CCFF" > she would by the flowers herself  </font> 
 <br><br>
