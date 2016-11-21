@@ -8,14 +8,7 @@ var textarray = [
  "but she looked older, this year,",
  "arms full of sweet peas, looked out with her little pink face pursed in enquiry."    // No comma after last entry
 ];
-
-function RndText() {
-  var rannum= Math.floor(Math.random()*textarray.length);
-  document.getElementById('ShowText').innerHTML=textarray[rannum];
-}
-onload = function() { RndText(); }
-</script>
-  <script type="text/javascript">
+    
 var textarray2 = [
  "like the flap of a wave; the kiss of a wave;",
  ", but it had left a slight ripple which flowed through glove shops and hat shops" ,
@@ -24,13 +17,6 @@ var textarray2 = [
   "She had a perpetual sense, as she watched the taxi cabs, of being out, out, far out to seal and alone;" // No comma after last entry
 ];
 
-function RndText() {
-  var rannum= Math.floor(Math.random()*textarray2.length);
-  document.getElementById('ShowText2').innerHTML=textarray2[rannum];
-}
-onload = function() { RndText(); }
-  </script>
-  <script type="text/javascript">
 var textarray3 = [
  "she felt very young; at the same time unspeakably aged",
  "; part of people she had never met; being laid out like a mist between the people she knew best," ,
@@ -39,12 +25,26 @@ var textarray3 = [
 ];
 
 function RndText() {
-  var rannum= Math.floor(Math.random()*textarray3.length);
-  document.getElementById('ShowText3').innerHTML=textarray3[rannum];
+  var rannum= Math.floor(Math.random()*textarray.length);
+  document.getElementById('ShowText').innerHTML=textarray[rannum];
 }
 onload = function() { RndText(); }
 
+function RndText2() {
+  var rannum= Math.floor(Math.random()*textarray2.length);
+  document.getElementById('ShowText2').innerHTML=textarray2[rannum];
+}
+onload = function() { RndText2(); }
+
+
+function RndText3() {
+  var rannum= Math.floor(Math.random()*textarray3.length);
+  document.getElementById('ShowText3').innerHTML=textarray3[rannum];
+}
+onload = function() { RndText3(); }
+
   </script>
+
 </head>
   
   <style>  
