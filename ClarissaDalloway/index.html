@@ -24,13 +24,22 @@ var textarray3 = [
  "; and felt quite sisterly and oddly conscious at the same time of her hat."    // No comma after last entry
 ];
 
+var textarray4 = [
+ "; and it lifted her up and up when--oh! a pistol shot in the street outside!",
+ "How he scolded her!" ,
+ "! Never should she forget all that! ",
+ "Nonsense, nonsense! she cried to herself,"    // No comma after last entry
+];
+
 function RndText() {
   var rannum= Math.floor(Math.random()*textarray.length);
   var rannum= Math.floor(Math.random()*textarray2.length);
   var rannum= Math.floor(Math.random()*textarray3.length);
+  var rannum= Math.floor(Math.random()*textarray4.length);
   document.getElementById('ShowText').innerHTML=textarray[rannum];
   document.getElementById('ShowText2').innerHTML=textarray2[rannum];
   document.getElementById('ShowText3').innerHTML=textarray3[rannum];
+  document.getElementById('ShowText4').innerHTML=textarray4[rannum];
 }
 onload = function() { RndText(); }
 
@@ -107,10 +116,15 @@ onload = function() { RndText(); }
   
   <center><font size = "3" color = "#CC99FF" > (the leaden circles disolved in the air) </font></center>
   <br>
-  <center><div id="ShowText2" style = "background-color:FCFFD8"></div></center>
+<center><div id="ShowText2" style = "background-color:FCFFD8"></div></center>
+<br><br><br><br><br>    
   
-<br><br><br><br><br>                                                           
+  <center> <div id="ShowText4" style = "background-color:FCFFD8"></div></center> 
+ 
+<br><br><br><br><br>   
+  
 <marquee><a href = "/L235F16/ClarissaDalloway/Party.html"> <font color = "blue"> TO THE PARTY </font> </a></marquee>  
+
 </body>
   
 
