@@ -3,7 +3,7 @@
   <title>ClarissaDalloway</title>
   <script type="text/javascript">
     
-<!--Clarissa as seen by others --> 
+//Clarissa as seen by others  
   
 var textarray = [
  "the perfect hostess he called her",
@@ -12,7 +12,7 @@ var textarray = [
  "arms full of sweet peas, looked out with her little pink face pursed in enquiry."    // No comma after last entry
 ];
  
-<!--Nautical Metaphor-->     
+//Nautical Metaphor    
 var textarray2 = [
  "like the flap of a wave; the kiss of a wave;",
  ", but it had left a slight ripple which flowed through glove shops and hat shops" ,
@@ -21,7 +21,7 @@ var textarray2 = [
   "She had a perpetual sense, as she watched the taxi cabs, of being out, out, far out to sea and alone;" // No comma after last entry
 ];
 
-<!--Clarissa as she sees herself-->        
+//Clarissa as she sees herself        
 var textarray3 = [
  "she felt very young; at the same time unspeakably aged",
  "; part of people she had never met; being laid out like a mist between the people she knew best," ,
@@ -30,6 +30,7 @@ var textarray3 = [
   "How much she wanted it--that people should look pleased as she came in" // No comma after last entry
 ];
 
+    //exclamatory sentences 
 var textarray4 = [
  "; and it lifted her up and up when--oh! a pistol shot in the street outside!",
  "How he scolded her!" ,
@@ -38,7 +39,7 @@ var textarray4 = [
   "when a million other things had vanished--how strange it was!--" // No comma after last entry
 ];
     
-
+//parentheticals 
 var textarray5 = [
  "(she had cried over it in her bedroom)",
  "(she stopped to look at a Dutch picture)" ,
@@ -46,13 +47,23 @@ var textarray5 = [
  "(for a girl of eighteen as she then was)",
   "(but one must economize, not buy things rashly for Elizabeth)," // No comma after last entry
 ];
-    
+  
+ //memories   
 var textarray6 = [
  "and when it came to that scene in the little garden by the fountain,",
  "? What was she trying to uncover? What image of white dawn" ,
  ";but to make people think this or that; perfect idocy she knew",
  "She would not say of anyone in the world now that they were this or they were that.",
   "" // No comma after last entry
+];
+
+//Richard     
+var textarray7 = [
+ "this being Mrs. Dalloway; not even Clarissa any more; this being Mrs. Richard Dalloway.",
+ "a little independence there must be between people living together day in day out in the same house; which Richard gave her, and she him. " ,
+ "but she did think him a good sort in his own way, though Richard was driven nearly mad by him,",
+ "Better anything, she was inclined to say. But it might only be a phase, as Richard said, such as all girls go through."
+  // No comma after last entry
 ];
     
 
@@ -64,12 +75,14 @@ function RndText() {
   var rannum4= Math.floor(Math.random()*textarray4.length);
   var rannum5= Math.floor(Math.random()*textarray5.length);
   var rannum6= Math.floor(Math.random()*textarray6.length);
+  var rannum7= Math.floor(Math.random()*textarray7.length);
   document.getElementById('ShowText').innerHTML=textarray[rannum];
   document.getElementById('ShowText2').innerHTML=textarray2[rannum2];
   document.getElementById('ShowText3').innerHTML=textarray3[rannum3];
   document.getElementById('ShowText4').innerHTML=textarray4[rannum4];
   document.getElementById('ShowText5').innerHTML=textarray5[rannum5];
-  document.getElementById('ShowText6').innerHTML=textarray5[rannum6];
+  document.getElementById('ShowText6').innerHTML=textarray6[rannum6];
+  document.getElementById('ShowText7').innerHTML=textarray7[rannum7];
 }
 onload = function() { RndText(); }
 
@@ -155,7 +168,13 @@ onload = function() { RndText(); }
   
   <center> <div id="ShowText5" style = "background-color:FCFFD8"></div></center> 
   
-  <br><br><br><br><br>   
+  <br><br><br><br><br>  
+  
+  <center> <div id="ShowText6" style = "background-color:FCFFD8"></div></center> 
+  
+<br><br><br><br><br>
+  
+  <center> <div id="ShowText7" style = "background-color:FCFFD8"></div></center> 
   
 <marquee><a href = "/L235F16/ClarissaDalloway/Party.html"> <font color = "blue"> TO THE PARTY </font> </a></marquee>  
 
