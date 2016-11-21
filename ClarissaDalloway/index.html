@@ -3,7 +3,7 @@
   <title>ClarissaDalloway</title>
   <script type="text/javascript">
 var textarray = [
- "she had the makings of the perfect hostess,",
+ "the perfect hostess he called her",
  "a touch of the bird about her, of the jay, blue-green" ,
  "but she looked older, this year,",
  "arms full of sweet peas, looked out with her little pink face pursed in enquiry."    // No comma after last entry
@@ -21,7 +21,8 @@ var textarray3 = [
  "she felt very young; at the same time unspeakably aged",
  "; part of people she had never met; being laid out like a mist between the people she knew best," ,
  "that she held herself well was true; and had nice hands and feet; and dressed well,",
- "; and felt quite sisterly and oddly conscious at the same time of her hat."    // No comma after last entry
+ "; and felt quite sisterly and oddly conscious at the same time of her hat.",
+  "How much she wanted it--that people should look pleased as she came in" // No comma after last entry
 ];
 
 var textarray4 = [
@@ -40,6 +41,16 @@ var textarray5 = [
  "(for a girl of eighteen as she then was)",
   "(but one must economize, not buy things rashly for Elizabeth)," // No comma after last entry
 ];
+    
+var textarray6 = [
+ "and when it came to that scene in the little garden by the fountain,",
+ "? What was she trying to uncover? What image of white dawn" ,
+ ";but to make people think this or that; perfect idocy she knew",
+ "She would not say of anyone in the world now that they were this or they were that.",
+  "" // No comma after last entry
+];
+    
+
 
 function RndText() {
   var rannum= Math.floor(Math.random()*textarray.length);
@@ -47,11 +58,13 @@ function RndText() {
   var rannum3= Math.floor(Math.random()*textarray3.length);
   var rannum4= Math.floor(Math.random()*textarray4.length);
   var rannum5= Math.floor(Math.random()*textarray5.length);
+  var rannum6= Math.floor(Math.random()*textarray6.length);
   document.getElementById('ShowText').innerHTML=textarray[rannum];
   document.getElementById('ShowText2').innerHTML=textarray2[rannum2];
   document.getElementById('ShowText3').innerHTML=textarray3[rannum3];
   document.getElementById('ShowText4').innerHTML=textarray4[rannum4];
   document.getElementById('ShowText5').innerHTML=textarray5[rannum5];
+  document.getElementById('ShowText6').innerHTML=textarray5[rannum6];
 }
 onload = function() { RndText(); }
 
