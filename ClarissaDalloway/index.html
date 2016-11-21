@@ -3,7 +3,7 @@
   <title>ClarissaDalloway</title>
   <script type="text/javascript">
 var textarray = [
- ",she had the makings of the perfect hostess,",
+ "she had the makings of the perfect hostess,",
  "a touch of the bird about her, of the jay, blue-green" ,
  "but she looked older, this year,",
  "arms full of sweet peas, looked out with her little pink face pursed in enquiry."    // No comma after last entry
@@ -28,7 +28,17 @@ var textarray4 = [
  "; and it lifted her up and up when--oh! a pistol shot in the street outside!",
  "How he scolded her!" ,
  "! Never should she forget all that! ",
- "Nonsense, nonsense! she cried to herself,"    // No comma after last entry
+ "Nonsense, nonsense! she cried to herself,",
+  "when a million other things had vanished--how strange it was!--" // No comma after last entry
+];
+    
+
+var textarray5 = [
+ "(she had cried over it in her bedroom)",
+ "(she stopped to look at a Dutch picture)" ,
+ "(Clarissa saw the car diminishing, disappearing),",
+ "(for a girl of eighteen as she then was)",
+  "(but one must economize, not buy things rashly for Elizabeth)," // No comma after last entry
 ];
 
 function RndText() {
@@ -36,10 +46,12 @@ function RndText() {
   var rannum= Math.floor(Math.random()*textarray2.length);
   var rannum= Math.floor(Math.random()*textarray3.length);
   var rannum= Math.floor(Math.random()*textarray4.length);
+  var rannum= Math.floor(Math.random()*textarray5.length);
   document.getElementById('ShowText').innerHTML=textarray[rannum];
   document.getElementById('ShowText2').innerHTML=textarray2[rannum];
   document.getElementById('ShowText3').innerHTML=textarray3[rannum];
   document.getElementById('ShowText4').innerHTML=textarray4[rannum];
+  document.getElementById('ShowText5').innerHTML=textarray5[rannum];
 }
 onload = function() { RndText(); }
 
@@ -101,7 +113,7 @@ onload = function() { RndText(); }
   
 <br><br>
   
-<img width = "200" height = "300" src = "/L235F16/ClarissaDalloway/images/londonstreet.gif" type = "image/gif" class = "london">  
+<img width = "200" height = "250" src = "/L235F16/ClarissaDalloway/images/londonstreet.gif" type = "image/gif" class = "london">  
 <img width = "350" height = "350" src = "/L235F16/ClarissaDalloway/images/bigb.jpg" type = "image/jpg" class = "bigb" >
 <img width = "350" height = "350" src = "/L235F16/ClarissaDalloway/images/biben.jpg" type = "image/jpg" class = "biben">
 
@@ -122,6 +134,10 @@ onload = function() { RndText(); }
   <center> <div id="ShowText4" style = "background-color:FCFFD8"></div></center> 
  
 <br><br><br><br><br>   
+  
+  <center> <div id="ShowText4" style = "background-color:FCFFD8"></div></center> 
+  
+  <br><br><br><br><br>   
   
 <marquee><a href = "/L235F16/ClarissaDalloway/Party.html"> <font color = "blue"> TO THE PARTY </font> </a></marquee>  
 
