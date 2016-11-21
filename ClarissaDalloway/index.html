@@ -66,6 +66,15 @@ var textarray7 = [
   // No comma after last entry
 ];
     
+//Peter    
+var textarray8 = [
+ "",
+ " " ,
+ "",
+ ""
+  // No comma after last entry
+];
+    
 
 
 function RndText() {
@@ -76,6 +85,7 @@ function RndText() {
   var rannum5= Math.floor(Math.random()*textarray5.length);
   var rannum6= Math.floor(Math.random()*textarray6.length);
   var rannum7= Math.floor(Math.random()*textarray7.length);
+  var rannum8= Math.floor(Math.random()*textarray8.length);
   document.getElementById('ShowText').innerHTML=textarray[rannum];
   document.getElementById('ShowText2').innerHTML=textarray2[rannum2];
   document.getElementById('ShowText3').innerHTML=textarray3[rannum3];
@@ -83,6 +93,7 @@ function RndText() {
   document.getElementById('ShowText5').innerHTML=textarray5[rannum5];
   document.getElementById('ShowText6').innerHTML=textarray6[rannum6];
   document.getElementById('ShowText7').innerHTML=textarray7[rannum7];
+  document.getElementById('ShowText8').innerHTML=textarray8[rannum8];
 }
 onload = function() { RndText(); }
 
@@ -146,8 +157,8 @@ onload = function() { RndText(); }
     .sail
     {
       position:absolute;
-      top:590px;
-      left:1200px;
+      top:580px;
+      left:1140px;
       z-index:1;
     }
      
