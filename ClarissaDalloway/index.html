@@ -43,15 +43,15 @@ var textarray5 = [
 
 function RndText() {
   var rannum= Math.floor(Math.random()*textarray.length);
-  var rannum= Math.floor(Math.random()*textarray2.length);
-  var rannum= Math.floor(Math.random()*textarray3.length);
-  var rannum= Math.floor(Math.random()*textarray4.length);
-  var rannum= Math.floor(Math.random()*textarray5.length);
+  var rannum2= Math.floor(Math.random()*textarray2.length);
+  var rannum3= Math.floor(Math.random()*textarray3.length);
+  var rannum4= Math.floor(Math.random()*textarray4.length);
+  var rannum5= Math.floor(Math.random()*textarray5.length);
   document.getElementById('ShowText').innerHTML=textarray[rannum];
-  document.getElementById('ShowText2').innerHTML=textarray2[rannum];
-  document.getElementById('ShowText3').innerHTML=textarray3[rannum];
-  document.getElementById('ShowText4').innerHTML=textarray4[rannum];
-  document.getElementById('ShowText5').innerHTML=textarray5[rannum];
+  document.getElementById('ShowText2').innerHTML=textarray2[rannum2];
+  document.getElementById('ShowText3').innerHTML=textarray3[rannum3];
+  document.getElementById('ShowText4').innerHTML=textarray4[rannum4];
+  document.getElementById('ShowText5').innerHTML=textarray5[rannum5];
 }
 onload = function() { RndText(); }
 
