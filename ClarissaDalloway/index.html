@@ -26,17 +26,13 @@ var textarray3 = [
 
 function RndText() {
   var rannum= Math.floor(Math.random()*textarray.length);
+  var rannum= Math.floor(Math.random()*textarray2.length);
+  var rannum= Math.floor(Math.random()*textarray3.length);
   document.getElementById('ShowText').innerHTML=textarray[rannum];
+  document.getElementById('ShowText2').innerHTML=textarray2[rannum];
+  document.getElementById('ShowText3').innerHTML=textarray3[rannum];
 }
 onload = function() { RndText(); }
-
-function RndText2() {
-  var rannum= Math.floor(Math.random()*textarray2.length);
-  document.getElementById('ShowText2').innerHTML=textarray2[rannum];
-}
-onload = function() { RndText2(); }
-
-
 
   </script>
 
