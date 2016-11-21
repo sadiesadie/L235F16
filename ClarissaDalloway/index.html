@@ -3,15 +3,42 @@
   <title>ClarissaDalloway</title>
   <script type="text/javascript">
 var textarray = [
- "Clarissa guessed;Clarissa knew of course;",
- "A charming woman" ,
+ "",
+ "a touch of the bird about her, of the jay, blue-green" ,
  "but she looked older, this year,",
- "this being Mrs.Dalloway; not even Clarissa any more;"    // No comma after last entry
+ ""    // No comma after last entry
 ];
 
 function RndText() {
   var rannum= Math.floor(Math.random()*textarray.length);
   document.getElementById('ShowText').innerHTML=textarray[rannum];
+}
+onload = function() { RndText(); }
+
+var textarray2 = [
+ "like the flap of a wave; the kiss of a wave;",
+ ", but it had left a slight ripple which flowed through glove shops and hat shops" ,
+ "as if this beauty, this scent, this colour, and Miss Pym liking her, trusting her, were a wave which she let flow over her",
+ "on waves of that divine vitality which Clarissa loved. To dance, to ride, she had adored all that)",
+  "She had a perpetual sense, as she watched the taxi cabs, of being out, out, far out to seal and alone;" // No comma after last entry
+];
+
+function RndText() {
+  var rannum= Math.floor(Math.random()*textarray.length);
+  document.getElementById('ShowText2').innerHTML=textarray2[rannum];
+}
+onload = function() { RndText(); }
+
+var textarray3 = [
+ "she felt very young; at the same time unspeakably aged",
+ "; part of people she had never met; being laid out like a mist between the people she knew best," ,
+ "that she held herself well was true; and had nice hands and feet; and dressed well,",
+ "; and felt quite sisterly and oddly conscious at the same time of her hat."    // No comma after last entry
+];
+
+function RndText() {
+  var rannum= Math.floor(Math.random()*textarray.length);
+  document.getElementById('ShowText3').innerHTML=textarray3[rannum];
 }
 onload = function() { RndText(); }
 
@@ -70,9 +97,9 @@ onload = function() { RndText(); }
   </style>
 
 <body background = "/L235F16/ClarissaDalloway/images/rose.jpg">
-  
+  <div id="ShowText3"></div>
  <br> 
-  <center><font size = "60" color = "#99CCFF" > she would by the flowers herself  </font> </center>
+  <center><font size = "60" color = "#99CCFF" > she would bye the flowers herself  </font> </center>
 <br><br>
   
 <img width = "350" height = "350" src = "/L235F16/ClarissaDalloway/images/bigb.jpg" type = "image/jpg" class = "bigb" >
@@ -93,6 +120,8 @@ onload = function() { RndText(); }
 <br><br><br><br><br>                                                           
 <marquee><a href = "/L235F16/ClarissaDalloway/Party.html"> <font color = "blue"> TO THE PARTY </font> </a></marquee>  
 </body>
+  
+  <div id="ShowText2"></div>
 
 </html>
 
