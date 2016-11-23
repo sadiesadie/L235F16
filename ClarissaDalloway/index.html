@@ -37,7 +37,7 @@ var textarray4 = [
  "(she stopped to look at a Dutch picture)" ,
  "(Clarissa saw the car diminishing, disappearing),",
  "(for a girl of eighteen as she then was)",
-  "(but one must economize, not buy things rashly for Elizabeth)," // No comma after last entry
+  "(but that might be her heart, affected, they said, by influenza)," // No comma after last entry
 ];
   
  //exclamatory sentences 
@@ -49,8 +49,19 @@ var textarray5 = [
   ", when millions of things had utterly vanished--how strange it was!--" // No comma after last entry
 ];    
     
-//Richard     
+//windows    
 var textarray6 = [
+ "feelings as she did, standing there at the open window,",
+ "and the shoekeepters were fidgeting in their windows with their paste and diamonds" ,
+ "pausing for a moment at the window of a glove shop where",
+ "But what was she dreaming as she looked into Hatchards' shop window?",
+ "for thirty seconds all heads were inclined the same way--to the window."
+  // No comma after last entry
+];
+    
+    
+//Richard     
+var textarray7 = [
  "this being Mrs. Dalloway; not even Clarissa any more; this being Mrs. Richard Dalloway.",
  "a little independence there must be between people living together day in day out in the same house; which Richard gave her, and she him. " ,
  "but she did think him a good sort in his own way, though Richard was driven nearly mad by him,",
@@ -58,19 +69,31 @@ var textarray6 = [
  "Much rather would she have been one of those people like Richard who did things for themselves,"
   // No comma after last entry
 ];
+
+//gender 
+ var textarray8 = [
+ "before a male hand drew the blind and there was nothing to be seen except a square of dove grey.",
+ "The mothers of Pimlico gave suck to their young" ,
+ "the usual interminable talk of women's ailments",
+ "Uncle William used to say a lady is known by her shoes and her gloves",
+  "--as if it were evening and girls in muslin frocks came out to pick sweet peas"
+  // No comma after last entry
+];   
+    
     
 //sounds   
-var textarray7 = [
+var textarray9 = [
  "First a warning, musical; then the hour, irrevocable",
  "there was a beating, a stirring of galloping ponies, tapping of cricket bats;" ,
  "in the triumph and the jingle and the strange high singing of some aeroplane overhead",
  "with a little squeak of the hinges, which she could hear now,",
-  "passing invisibly, inaudibly, like a cloud, swift, viel-like upon hills,"
+ "passing invisibly, inaudibly, like a cloud, swift, viel-like upon hills,"
+ "the frail hum of the motor wheels as the walls of a whispering gallery return a single voice"
   // No comma after last entry
 ];
     
 //Peter    
-var textarray8 = [
+var textarray10 = [
  "here, there, she survived, Peter survived, lived in each other,",
  "and she would not say of Peter, she would not say of herself, I am this, I am that." ,
  "it was his sayings one remembered; his eyes, his pocket-knife, his smile, his grumpiness and,",
@@ -80,9 +103,7 @@ var textarray8 = [
   // No comma after last entry
 ];
     
-
-    
-
+  
 
 function RndText() {
   var rannum= Math.floor(Math.random()*textarray.length);
@@ -93,6 +114,8 @@ function RndText() {
   var rannum6= Math.floor(Math.random()*textarray6.length);
   var rannum7= Math.floor(Math.random()*textarray7.length);
   var rannum8= Math.floor(Math.random()*textarray8.length);
+  var rannum9= Math.floor(Math.random()*textarray9.length);
+  var rannum10= Math.floor(Math.random()*textarray10.length);
   document.getElementById('ShowText').innerHTML=textarray[rannum];
   document.getElementById('ShowText2').innerHTML=textarray2[rannum2];
   document.getElementById('ShowText3').innerHTML=textarray3[rannum3];
@@ -101,6 +124,8 @@ function RndText() {
   document.getElementById('ShowText6').innerHTML=textarray6[rannum6];
   document.getElementById('ShowText7').innerHTML=textarray7[rannum7];
   document.getElementById('ShowText8').innerHTML=textarray8[rannum8];
+  document.getElementById('ShowText9').innerHTML=textarray9[rannum9];
+  document.getElementById('ShowText10').innerHTML=textarray10[rannum10];
 }
 onload = function() { RndText(); }
 
@@ -221,9 +246,17 @@ onload = function() { RndText(); }
   
 <br><br><br><br><br>
   
-   <center> <div id="ShowText8" style = "background-color:FCFFD8"></div></center> 
+   <center> <div id="ShowText8" style = "background-color:FCFFD8"></div></center>
   
-<marquee><a href = "/L235F16/ClarissaDalloway/Party.html"> <font color = "blue"> TO THE PARTY </font> </a></marquee>  
+  <br><br><br><br><br>
+  
+   <center> <div id="ShowText9" style = "background-color:FCFFD8"></div></center>
+  
+  <br><br><br><br><br>
+  
+   <center> <div id="ShowText10" style = "background-color:FCFFD8"></div></center>
+  
+
 
   
   
