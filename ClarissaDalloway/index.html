@@ -58,10 +58,19 @@ var textarray6 = [
  "for thirty seconds all heads were inclined the same way--to the window."
   // No comma after last entry
 ];
-    
+  
+//gender 
+ var textarray7 = [
+ "before a male hand drew the blind and there was nothing to be seen except a square of dove grey.",
+ "The mothers of Pimlico gave suck to their young" ,
+ "the usual interminable talk of women's ailments",
+ "Uncle William used to say a lady is known by her shoes and her gloves",
+  "--as if it were evening and girls in muslin frocks came out to pick sweet peas"
+  // No comma after last entry
+];       
     
 //Richard     
-var textarray7 = [
+var textarray8 = [
  "this being Mrs. Dalloway; not even Clarissa any more; this being Mrs. Richard Dalloway.",
  "a little independence there must be between people living together day in day out in the same house; which Richard gave her, and she him. " ,
  "but she did think him a good sort in his own way, though Richard was driven nearly mad by him,",
@@ -70,15 +79,17 @@ var textarray7 = [
   // No comma after last entry
 ];
 
-//gender 
- var textarray8 = [
- "before a male hand drew the blind and there was nothing to be seen except a square of dove grey.",
- "The mothers of Pimlico gave suck to their young" ,
- "the usual interminable talk of women's ailments",
- "Uncle William used to say a lady is known by her shoes and her gloves",
-  "--as if it were evening and girls in muslin frocks came out to pick sweet peas"
+ 
+//sounds   
+var textarray9 = [
+ "First a warning, musical; then the hour, irrevocable",
+ "there was a beating, a stirring of galloping ponies, tapping of cricket bats;" ,
+ "in the triumph and the jingle and the strange high singing of some aeroplane overhead",
+ "with a little squeak of the hinges, which she could hear now,",
+ "passing invisibly, inaudibly, like a cloud, swift, viel-like upon hills,"
+ "the frail hum of the motor wheels as the walls of a whispering gallery return a single voice"
   // No comma after last entry
-];   
+];
     
 
 
@@ -94,6 +105,7 @@ function RndText() {
   var rannum6= Math.floor(Math.random()*textarray6.length);
   var rannum7= Math.floor(Math.random()*textarray7.length);
   var rannum8= Math.floor(Math.random()*textarray8.length);
+  var rannum9= Math.floor(Math.random()*textarray9.length);
   document.getElementById('ShowText').innerHTML=textarray[rannum];
   document.getElementById('ShowText2').innerHTML=textarray2[rannum2];
   document.getElementById('ShowText3').innerHTML=textarray3[rannum3];
@@ -102,6 +114,7 @@ function RndText() {
   document.getElementById('ShowText6').innerHTML=textarray6[rannum6];
   document.getElementById('ShowText7').innerHTML=textarray7[rannum7];
   document.getElementById('ShowText8').innerHTML=textarray8[rannum8];
+  document.getElementById('ShowText9').innerHTML=textarray9[rannum9];
  
 }
 onload = function() { RndText(); }
@@ -224,6 +237,10 @@ onload = function() { RndText(); }
 <br><br><br><br><br>
   
    <center> <div id="ShowText8" style = "background-color:FCFFD8"></div></center>
+  
+  <br><br><br><br><br>
+  
+     <center> <div id="ShowText9" style = "background-color:FCFFD8"></div></center>
   
   <br><br><br><br><br>
  
