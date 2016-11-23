@@ -92,16 +92,7 @@ var textarray9 = [
   // No comma after last entry
 ];
     
-//Peter    
-var textarray10 = [
- "here, there, she survived, Peter survived, lived in each other,",
- "and she would not say of Peter, she would not say of herself, I am this, I am that." ,
- "it was his sayings one remembered; his eyes, his pocket-knife, his smile, his grumpiness and,",
- "some days, some sights bringing him back to her calmly, without the old bitterness;",
- "He would put on his spectacles, if she told him to; he would look",
- "But with Peter everything had to be shared; everything gone into."
-  // No comma after last entry
-];
+
     
   
 
@@ -115,7 +106,6 @@ function RndText() {
   var rannum7= Math.floor(Math.random()*textarray7.length);
   var rannum8= Math.floor(Math.random()*textarray8.length);
   var rannum9= Math.floor(Math.random()*textarray9.length);
-  var rannum10= Math.floor(Math.random()*textarray10.length);
   document.getElementById('ShowText').innerHTML=textarray[rannum];
   document.getElementById('ShowText2').innerHTML=textarray2[rannum2];
   document.getElementById('ShowText3').innerHTML=textarray3[rannum3];
@@ -125,7 +115,6 @@ function RndText() {
   document.getElementById('ShowText7').innerHTML=textarray7[rannum7];
   document.getElementById('ShowText8').innerHTML=textarray8[rannum8];
   document.getElementById('ShowText9').innerHTML=textarray9[rannum9];
-  document.getElementById('ShowText10').innerHTML=textarray10[rannum10];
 }
 onload = function() { RndText(); }
 
